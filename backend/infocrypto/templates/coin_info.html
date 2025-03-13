@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ coin_data.name }} Information</title>
+</head>
+<body>
+    <h1>{{ coin_data.name }} - {{ coin_data.symbol }}</h1>
+    <p><strong>Price (USD):</strong> ${{ coin_data.priceUsd }}</p>
+    <p><strong>Market Cap:</strong> ${{ coin_data.marketCapUsd }}</p>
+    <p><strong>24h Change:</strong> {{ coin_data.changePercent24Hr }}%</p>
+    <p><strong>Supply:</strong> {{ coin_data.supply }}</p>
+
+    <!-- Optional: You can also show other available information -->
+    <p><strong>Rank:</strong> {{ coin_data.rank }}</p>
+    <p><strong>Volume (24h):</strong> ${{ coin_data.volumeUsd24Hr }}</p>
+
+    <hr>
+    <a href="/">Back to Home</a>
+</body>
+</html>
